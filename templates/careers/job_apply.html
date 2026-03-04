@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+
+{% block title %}Apply for {{ job.title }} - Jovian Careers{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <nav aria-label="breadcrumb" class="mb-3">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{% url 'careers:job_list' %}">Open Positions</a></li>
+                    <li class="breadcrumb-item"><a href="{% url 'careers:job_detail' job.pk %}">{{ job.title }}</a></li>
+                    <li class="breadcrumb-item active">Apply</li>
+                </ol>
+            </nav>
+
+            <div class="bg-white rounded-3 border p-4 mb-4">
+                <div class="d-flex align-items-center gap-3">
+                    <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center" style="width:50px;height:50px;">
+                        <i class="fas fa-briefcase text-white"></i>
+                    </div>
+                    <div>
+                        <h4 class="fw-bold mb-0">{{ job.title }}</h4>
+                        <p class="text-muted mb-0">{{ job.department }} &bull; {{ job.location }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3 border p-4">
+                <h4 class="fw-bold mb-4">Your Application</h4>
+
+                <form method="POST">
+                    {% csrf_token %}
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">First Name <span class="text-danger">*</span></label>
+                            {{ form.first_name }}
+                            {% if form.first_name.errors %}
+                            <div class="text-danger small mt-1">{{ form.first_name.errors }}</div>
+                            {% endif %}
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">Last Name <span class="text-danger">*</span></label>
+                            {{ form.last_name }}
+                            {% if form.last_name.errors %}
+                            <div class="text-danger small mt-1">{{ form.last_name.errors }}</div>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">Email Address <span class="text-danger">*</span></label>
+                            {{ form.email }}
+                            {% if form.email.errors %}
+                            <div class="text-danger small mt-1">{{ form.email.errors }}</div>
+                            {% endif %}
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">Phone Number</label>
+                            {{ form.phone }}
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Cover Letter <span class="text-danger">*</span></label>
+                        {{ form.cover_letter }}
+                        {% if form.cover_letter.errors %}
+                        <div class="text-danger small mt-1">{{ form.cover_letter.errors }}</div>
+                        {% endif %}
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Resume Link <span class="text-danger">*</span></label>
+                        {{ form.resume_url }}
+                        <div class="form-text">Share a link to your resume (Google Drive, Dropbox, etc.)</div>
+                        {% if form.resume_url.errors %}
+                        <div class="text-danger small mt-1">{{ form.resume_url.errors }}</div>
+                        {% endif %}
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">LinkedIn Profile</label>
+                            {{ form.linkedin_url }}
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label fw-semibold">Portfolio / GitHub</label>
+                            {{ form.portfolio_url }}
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <div class="d-flex gap-3">
+                        <button type="submit" class="btn apply-btn btn-primary text-white px-5">
+                            <i class="fas fa-paper-plane me-2"></i>Submit Application
+                        </button>
+                        <a href="{% url 'careers:job_detail' job.pk %}" class="btn btn-outline-secondary px-4">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

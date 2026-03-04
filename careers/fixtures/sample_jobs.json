@@ -1,0 +1,110 @@
+[
+  {
+    "model": "careers.joblisting",
+    "pk": 1,
+    "fields": {
+      "title": "Senior Machine Learning Engineer",
+      "department": "Engineering",
+      "location": "Remote (Worldwide)",
+      "location_type": "remote",
+      "employment_type": "full_time",
+      "description": "We are looking for a Senior Machine Learning Engineer to join our growing team at Jovian.ai. You will work on building and scaling ML systems that power our learning platform used by millions of students worldwide.\n\nAs a Senior ML Engineer, you will:\n- Design and implement ML models for personalized learning recommendations\n- Build scalable ML pipelines for data processing and model training\n- Collaborate with product teams to integrate ML features into the platform\n- Mentor junior engineers and contribute to technical direction\n- Contribute to open-source ML tooling and the broader community",
+      "requirements": "Required:\n- 5+ years of experience in machine learning or deep learning\n- Proficiency in Python and ML frameworks (PyTorch, TensorFlow, scikit-learn)\n- Experience with MLOps tools (MLflow, Weights & Biases, Kubeflow)\n- Strong understanding of data structures and algorithms\n- Experience with cloud platforms (AWS, GCP, or Azure)\n\nNice to Have:\n- Experience in NLP and large language models\n- Contributions to open-source ML projects\n- Experience with distributed systems",
+      "salary_min": 150,
+      "salary_max": 220,
+      "is_active": true,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z"
+    }
+  },
+  {
+    "model": "careers.joblisting",
+    "pk": 2,
+    "fields": {
+      "title": "Product Manager - Learning Experience",
+      "department": "Product",
+      "location": "Remote (US/Europe)",
+      "location_type": "remote",
+      "employment_type": "full_time",
+      "description": "We are seeking a Product Manager to lead the Learning Experience team at Jovian.ai. You will define and execute the product roadmap for our core learning features, working closely with engineering, design, and content teams.\n\nKey Responsibilities:\n- Define product vision and roadmap for the learning experience\n- Conduct user research and analyze metrics to inform product decisions\n- Work with engineers and designers to ship high-quality features\n- Partner with the content team to improve course quality and completion rates\n- Identify and prioritize opportunities to improve learner outcomes",
+      "requirements": "Required:\n- 4+ years of product management experience\n- Experience with EdTech or consumer-facing learning products\n- Strong analytical skills and experience with data-driven decision making\n- Excellent written and verbal communication skills\n- Experience working with cross-functional teams\n\nNice to Have:\n- Experience with A/B testing and experimentation platforms\n- Background in education or instructional design\n- MBA or equivalent advanced degree",
+      "salary_min": 130,
+      "salary_max": 180,
+      "is_active": true,
+      "created_at": "2024-01-18T10:00:00Z",
+      "updated_at": "2024-01-18T10:00:00Z"
+    }
+  },
+  {
+    "model": "careers.joblisting",
+    "pk": 3,
+    "fields": {
+      "title": "Full Stack Engineer (React/Django)",
+      "department": "Engineering",
+      "location": "Remote (India/Southeast Asia)",
+      "location_type": "remote",
+      "employment_type": "full_time",
+      "description": "Jovian.ai is looking for a Full Stack Engineer to help us build and scale our learning platform. You will work across the stack — from React frontends to Django backends — delivering features that directly impact our learners.\n\nWhat you'll do:\n- Build new features and improve existing ones across our web platform\n- Write clean, maintainable code with thorough testing\n- Optimize performance and reliability of web applications\n- Participate in code reviews and improve engineering practices\n- Work directly with product and design teams to ship quality features quickly",
+      "requirements": "Required:\n- 3+ years of full stack web development experience\n- Strong proficiency in React.js and modern JavaScript/TypeScript\n- Experience with Python and Django or similar backend frameworks\n- Solid understanding of REST APIs and database design\n- Experience with Git and agile development practices\n\nNice to Have:\n- Experience with PostgreSQL, Redis, and Celery\n- Familiarity with AWS or other cloud platforms\n- Open source contributions",
+      "salary_min": 80,
+      "salary_max": 120,
+      "is_active": true,
+      "created_at": "2024-01-20T10:00:00Z",
+      "updated_at": "2024-01-20T10:00:00Z"
+    }
+  },
+  {
+    "model": "careers.joblisting",
+    "pk": 4,
+    "fields": {
+      "title": "Data Science Instructor",
+      "department": "Content",
+      "location": "Remote (Worldwide)",
+      "location_type": "remote",
+      "employment_type": "contract",
+      "description": "Join Jovian.ai as a Data Science Instructor and help us teach the next generation of data scientists! You will create world-class video courses, projects, and learning materials covering the latest tools and techniques in data science and ML.\n\nResponsibilities:\n- Create engaging video lectures and hands-on coding projects\n- Design curriculum and learning paths for data science tracks\n- Mentor students through assignments and live sessions\n- Keep course content current with the evolving ML/AI landscape\n- Engage with the student community through forums and Q&A",
+      "requirements": "Required:\n- Strong expertise in Python, Pandas, NumPy, Matplotlib, Scikit-learn\n- Experience with data science projects (Kaggle competitions, real-world projects)\n- Excellent communication and teaching skills\n- Ability to explain complex concepts in a clear, engaging way\n\nNice to Have:\n- Experience creating online courses or teaching\n- Knowledge of deep learning (PyTorch/TensorFlow)\n- Active presence on Kaggle, GitHub, or ML communities",
+      "salary_min": 40,
+      "salary_max": 80,
+      "is_active": true,
+      "created_at": "2024-01-22T10:00:00Z",
+      "updated_at": "2024-01-22T10:00:00Z"
+    }
+  },
+  {
+    "model": "careers.joblisting",
+    "pk": 5,
+    "fields": {
+      "title": "UX/UI Designer",
+      "department": "Design",
+      "location": "Remote (Worldwide)",
+      "location_type": "remote",
+      "employment_type": "full_time",
+      "description": "We're looking for a UX/UI Designer to join our product team at Jovian.ai. You will own the end-to-end design process for new features — from research and wireframing to high-fidelity prototypes and design systems.\n\nWhat you'll own:\n- User research, usability testing, and persona development\n- Wireframes, prototypes, and high-fidelity UI designs\n- Maintaining and evolving our design system\n- Partnering with product and engineering to ship pixel-perfect features\n- Advocating for learner-centered design principles across the team",
+      "requirements": "Required:\n- 3+ years of UX/UI design experience for web products\n- Proficiency in Figma or similar design tools\n- Strong portfolio demonstrating end-to-end design process\n- Experience conducting user research and usability testing\n- Excellent attention to detail and visual design skills\n\nNice to Have:\n- Experience designing for EdTech or B2C platforms\n- Basic HTML/CSS knowledge\n- Experience with design systems (Material, Ant Design, etc.)",
+      "salary_min": 90,
+      "salary_max": 130,
+      "is_active": true,
+      "created_at": "2024-01-25T10:00:00Z",
+      "updated_at": "2024-01-25T10:00:00Z"
+    }
+  },
+  {
+    "model": "careers.joblisting",
+    "pk": 6,
+    "fields": {
+      "title": "Marketing Intern - Growth",
+      "department": "Marketing",
+      "location": "Remote (India)",
+      "location_type": "remote",
+      "employment_type": "internship",
+      "description": "Join Jovian.ai as a Growth Marketing Intern and get hands-on experience growing one of India's leading EdTech platforms. You'll work directly with our marketing team on campaigns, content, and community growth initiatives.\n\nWhat you'll do:\n- Assist in planning and executing digital marketing campaigns\n- Create content for social media, email newsletters, and blog posts\n- Analyze marketing metrics and report on campaign performance\n- Support community management across Discord, LinkedIn, and Twitter\n- Help with SEO research and content optimization",
+      "requirements": "Required:\n- Currently pursuing or recently completed a degree in Marketing, Business, or related field\n- Strong written communication skills in English\n- Familiarity with social media platforms and digital marketing basics\n- Eagerness to learn and a data-driven mindset\n\nNice to Have:\n- Experience with Google Analytics, Mailchimp, or similar tools\n- Prior internship in marketing or content creation\n- Interest in data science, AI, or EdTech",
+      "salary_min": null,
+      "salary_max": null,
+      "is_active": true,
+      "created_at": "2024-01-28T10:00:00Z",
+      "updated_at": "2024-01-28T10:00:00Z"
+    }
+  }
+]
