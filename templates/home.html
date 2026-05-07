@@ -13,7 +13,8 @@
     #banner{
       height:360px;
       object-fit:cover;
-      width:100%  
+      width:100%  ;
+      margin-bottom:16px
     }
     *{
       text-align:center
@@ -21,12 +22,24 @@
     </style>
 </head>
 <body>
+  {% include 'nav.html'%}
+  <img id ="banner" class="img-fluid" src="static/career.jpg" height="320">
+
+  
   <div class="container">
     <h1 class="mt-4 mb-4"> {{company_name}} Careers </h1>
   
-    <img id ="banner" class="img-fluid" src="static/career.jpg" height="320">
-    <h2>About Jovian</h2>
-    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aut voluptatem quod ipsam unde sed molestiae dolorum culpa. Reprehenderit distinctio labore pariatur ex rem, cum cupiditate sint quia nostrum optio </p>
+    <div>
+      <div class="row">
+      <div class="col-md-6" style="margin-bottom:16px; border-radius:40px">
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore aut voluptatem quod ipsam unde sed molestiae dolorum culpa. Reprehenderit distinctio labore pariatur ex rem, cum cupiditate sint quia nostrum optio </p>
+      </div>
+      <div class="d-none d-md-block col-6" style="border-radius:40px">
+        <img id ="banner" class="img-fluid"  src="static/people.jpg" height="320">
+      </div>
+      </div>
+    
+    </div>
     <h2>Job Openings</h2>
     <div> 
       {% for job in jobs %}
@@ -35,9 +48,10 @@
       {% endfor %}
       </div>
     <div > 
-      <button class="btn btn-primary btn-lg">Contact Us</button>
+      <a class="btn btn-primary btn-lg">Contact Us</a>
       <p>Copyrght 2022, Jovian</p>
     </div>
   </div>
+{% include 'footer.html'%}
 </body>
 </html>
